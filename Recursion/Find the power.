@@ -1,0 +1,23 @@
+//Find the power. I have taken the input fron the user. 
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int pow(int m,int n){
+    if(n==0){
+        return 1;
+        
+    }
+    else{
+        return pow(m,n-1)*m;
+    }
+}
+int main(){
+    int m,n;
+    cout<<"Enter the value whose power we need :";
+    cin>>m;
+    cout<<"Power :";
+    cin>>n;
+    int value=pow(m,n);
+    cout<<"Answer will be :"<<value;
+}
