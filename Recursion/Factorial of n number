@@ -1,0 +1,21 @@
+//Factorial of n number. I have taken the input from the user. 
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int factorial(int n){
+    if(n==0){
+        return 1;
+    }
+    else{
+        return factorial(n-1)*n;
+    }
+}
+int main(){
+    int n;
+    int input;
+    cout<<"Enter number for printing the factorial :";
+    cin>>input;
+    n=factorial(input);
+    cout<<"Factorial of N will be : "<<n;
+}
